@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ba29eb38-f813-4016-b8b4-deeebd4d3c4b" solutionId="ba29eb38-f813-4016-b8b4-deeebd4d3c4b" resetWebServer="false" sharePointProductVersion="15.0" name="SharePointOnlineNews" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="547036cc-7bda-4c1b-b219-6bdafb961fcd" />
+    <featureReference itemId="48a864d9-a0f9-4f72-adf8-b1297318ee0b" />
+  </features>
+</package>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D47B98A9-15A6-4388-9351-B7FD5949EA0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePointOnlineNews</RootNamespace>
+    <AssemblyName>SharePointOnlineNews</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeatureElements\WebParts\OnlineNewsFeed\OnlineNewsFeed.cs" />
+    <Compile Include="Features\Activate.Branding\Activate.EventReceiver.cs">
+      <DependentUpon>Activate.Branding.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeatureElements\ContentTypes\OnlineNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6258f9fa-1b45-4f08-8aea-f95e8c539529}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\MasterPages\MyOnline.master" />
+    <None Include="FeatureElements\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b2e7a059-aafa-423b-8c93-20df9e8c77e5}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{102f2c11-2e7f-42dd-9c9d-f81e52ee5746}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\SiteColumns\Ingress\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08fa5b49-45b9-4fd0-9677-9301905d7f5a}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\Style Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ef1fd02-97f6-41d2-a328-c51fdf4fe976}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\WebParts\OnlineNewsFeed\OnlineNewsFeed.webpart" />
+    <None Include="FeatureElements\WebParts\OnlineNewsFeed\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6051224a-dc14-4fd3-936f-c1173d453ee6}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Activate.Branding\Activate.Branding.feature">
+      <FeatureId>{547036cc-7bda-4c1b-b219-6bdafb961fcd}</FeatureId>
+    </None>
+    <None Include="Features\Activate.Online.News\Activate.Online.News.feature">
+      <FeatureId>{48a864d9-a0f9-4f72-adf8-b1297318ee0b}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{ba29eb38-f813-4016-b8b4-deeebd4d3c4b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FeatureElements\Style Library\SharePointOnlineNews\Images\" />
+    <Folder Include="FeatureElements\Style Library\SharePointOnlineNews\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FeatureElements\ContentTypes\OnlineNews\Elements.xml" />
+    <Content Include="FeatureElements\MasterPages\Elements.xml" />
+    <Content Include="FeatureElements\PageLayouts\Elements.xml" />
+    <Content Include="FeatureElements\PageLayouts\OnlineNewsArticle.aspx" />
+    <Content Include="FeatureElements\SiteColumns\Ingress\Elements.xml" />
+    <Content Include="FeatureElements\Style Library\Elements.xml" />
+    <Content Include="FeatureElements\Style Library\SharePointOnlineNews\Styles\Custom.css" />
+    <Content Include="FeatureElements\Style Library\SharePointOnlineNews\XSL Style Sheets\OnlineNewsItemStyel.xsl" />
+    <Content Include="FeatureElements\WebParts\OnlineNewsFeed\Elements.xml" />
+    <Content Include="Features\Activate.Branding\Activate.Branding.Template.xml">
+      <DependentUpon>Activate.Branding.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Activate.Online.News\Activate.Online.News.Template.xml">
+      <DependentUpon>Activate.Online.News.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Activate Online News" Id="93d931a4-41b9-4d1c-a5b1-8fba89c3dc5e" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="PageLayouts\Elements.xml" />
+    <ElementFile Location="PageLayouts\OnlineNewsArticle.aspx" />
+    <ElementManifest Location="OnlineNews\Elements.xml" />
+    <ElementManifest Location="Ingress\Elements.xml" />
+    <ElementManifest Location="OnlineNewsFeed\Elements.xml" />
+    <ElementFile Location="OnlineNewsFeed\OnlineNewsFeed.webpart" />
+  </ElementManifests>
+</Feature>

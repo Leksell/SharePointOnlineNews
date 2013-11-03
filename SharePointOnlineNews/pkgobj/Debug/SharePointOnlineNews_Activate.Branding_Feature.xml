@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SharePointOnlineNews Feature1" Id="3393f912-db8a-4b57-a42c-b148e682b89c" ReceiverAssembly="SharePointOnlineNews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cb3eb4a3bb3fc1d2" ReceiverClass="SharePointOnlineNews.Features.Activate.Branding.ActivateEventReceiver" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="Style Library\Elements.xml" />
+    <ElementFile Location="Style Library\SharePointOnlineNews\Styles\Custom.css" />
+    <ElementFile Location="Style Library\SharePointOnlineNews\XSL Style Sheets\OnlineNewsItemStyel.xsl" />
+    <ElementManifest Location="MasterPages\Elements.xml" />
+    <ElementFile Location="MasterPages\MyOnline.master" />
+  </ElementManifests>
+</Feature>

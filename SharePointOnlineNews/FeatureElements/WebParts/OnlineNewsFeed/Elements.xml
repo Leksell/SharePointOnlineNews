@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="OnlineNewsFeed" List="113" Url="_catalogs/wp">
+    <File Path="OnlineNewsFeed\OnlineNewsFeed.webpart" Url="SharePointOnlineNews_OnlineNewsFeed.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Online News" />
+    </File>
+  </Module>
+</Elements>
+

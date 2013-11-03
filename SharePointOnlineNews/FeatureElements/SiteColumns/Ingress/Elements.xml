@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f934a829-c628-454b-9224-8d91378c19b5}"
+       Name="Ingress"
+       DisplayName="Ingress"
+       Type="Note"
+       Required="TRUE"
+       Group="Online News Site Columns">
+  </Field>
+</Elements>

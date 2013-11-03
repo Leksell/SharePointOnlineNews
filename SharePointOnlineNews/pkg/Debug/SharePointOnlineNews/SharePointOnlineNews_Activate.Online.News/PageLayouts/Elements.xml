@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PageLayouts" Path="PageLayouts" RootWebOnly="TRUE" Url="_catalogs/masterpage">
+    <File Path="OnlineNewsArticle.aspx" Url="OnlineNewsArticle.aspx" >
+      <Property Name="ContentType" Value="Page Layout" />
+      <Property Name="Title" Value="Online News Article" />
+      <Property Name="MasterPageDescription" Value="Page layout for Online News" />
+    </File>
+  </Module>
+</Elements>

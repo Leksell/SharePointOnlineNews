@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ba29eb38-f813-4016-b8b4-deeebd4d3c4b" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SharePointOnlineNews.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SharePointOnlineNews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cb3eb4a3bb3fc1d2" Namespace="SharePointOnlineNews.FeatureElements.WebParts.OnlineNewsFeed" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SharePointOnlineNews_Activate.Branding\Feature.xml" />
+    <FeatureManifest Location="SharePointOnlineNews_Activate.Online.News\Feature.xml" />
+  </FeatureManifests>
+</Solution>

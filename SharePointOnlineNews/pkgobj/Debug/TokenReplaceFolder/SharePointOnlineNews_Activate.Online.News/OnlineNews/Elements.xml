@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Article Page (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D) -->
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D00AF3A0421A7D34293909A92FE174DF5E4"
+               Name="OnlineNews"
+               Group="Online News"
+               Description="Content type for Online News"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{f934a829-c628-454b-9224-8d91378c19b5}" DisplayName="Ingress" Required="FALSE" Name="Ingress" NumLines="6" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

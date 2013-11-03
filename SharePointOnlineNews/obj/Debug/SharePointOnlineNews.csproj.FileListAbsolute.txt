@@ -1,0 +1,5 @@
+C:\Users\sp-install\Source\Repos\SharePointOnlineNews\SharePointOnlineNews\bin\Debug\SharePointOnlineNews.dll
+C:\Users\sp-install\Source\Repos\SharePointOnlineNews\SharePointOnlineNews\bin\Debug\SharePointOnlineNews.pdb
+C:\Users\sp-install\Source\Repos\SharePointOnlineNews\SharePointOnlineNews\obj\Debug\SharePointOnlineNews.csprojResolveAssemblyReference.cache
+C:\Users\sp-install\Source\Repos\SharePointOnlineNews\SharePointOnlineNews\obj\Debug\SharePointOnlineNews.dll
+C:\Users\sp-install\Source\Repos\SharePointOnlineNews\SharePointOnlineNews\obj\Debug\SharePointOnlineNews.pdb

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Style Library\" Type="ElementManifest" />
+    <ProjectItemFile Source="SharePointOnlineNews\Styles\Custom.css" Target="Style Library\SharePointOnlineNews\Styles\" Type="ElementFile" />
+    <ProjectItemFile Source="SharePointOnlineNews\XSL Style Sheets\OnlineNewsItemStyel.xsl" Target="Style Library\SharePointOnlineNews\XSL Style Sheets\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

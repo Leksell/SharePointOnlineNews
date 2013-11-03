@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Style Library">
+    <File Path="Style Library\SharePointOnlineNews\Styles\Custom.css" Url="Style Library/SharePointOnlineNews/Styles/Custom.css" />
+    <File Path="Style Library\SharePointOnlineNews\XSL Style Sheets\OnlineNewsItemStyel.xsl" Url="Style Library/SharePointOnlineNews/XSL Style Sheets/OnlineNewsItemStyel.xsl" />
+  </Module>
+</Elements>
